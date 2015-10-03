@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset ="utf-8">
+    <meta http-equiv= "X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local 10 Web Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,700italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- START TOP MENU  -->
+  <div class="container"> <!-- START CONTAINER -->
+    <div class="row menu">
+      <div class=" col-xs-3 col-sm-3 col-md-3 logo ">
+        <a href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+      </div>
+
+      <div class="col-xs-9 col-sm-9 col-md-9">
+        <nav> <!-- this is the section where my navigation starts -->
+          <ul> <!-- unordered list for navigation -->
+            <li class="tp"> <!-- this is a list item -->
+              <a href="index.html" >HOME</a>
+            </li>
+            <li class="tp"> <!-- this is a list item -->
+              <a href="aboutl.html" >ABOUT</a>
+            </li> 
+            <li class="tp"> <!-- this is a list item -->
+              <a href="#project.html" >PROJECTS<span class="caret"></span></a>      
+              <div class="dropdown">
+                <ul id="drop-nav">
+                    <ul>
+                      <li class="sub"><a href="#">Architecture</a></li>
+                      <li class="sub"><a href="projectStand.html">Stands</a></li>
+                      <li class="sub"><a href="#">Displays</a></li>
+                  </ul>
+                </ul>
+              </div>  
+            </li> 
+            <li class="tp"> <!-- this is a list item -->
+              <a href="#Ainstructions.html" >A. INSTRUCTIONS</a>
+            </li>
+            <li class="tp"> <!-- this is a list item -->
+              <a href="contact.html" >CONTACTS</a>
+            </li>
+          </ul>
+          
+        </nav>
+      </div>
+    </div>
+<!-- END TOP MENU -->
+     <div class="row ab">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <p class="about stands">
+                    CONTACT
+                </p>
+                <hr>
+            </div>
+       </div>   
+<!-- STAR CONTACT FORM -->
+   <div class="col-md-12">
+     <form name="contactform" method="post" action="php/send_form_email.php">
+        <table width="450px">
+          <tr>
+            <td valign="top">
+              <label for="first_name">First Name *</label>
+            </td>
+            <td valign="top">
+              <input  type="text" name="first_name" maxlength="50" size="40">
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <label for="last_name">Last Name </label>
+            </td>
+            <td valign="top">
+              <input  type="text" name="last_name" maxlength="50" size="40">
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <label for="email">Email Address *</label>
+            </td>
+            <td valign="top">
+              <input  type="text" name="email" maxlength="80" size="40">
+            </td>
+          </tr>
+          <tr >
+            <td valign="top">
+              <label for="telephone">Telephone Number</label>
+            </td>
+            <td valign="top center">
+              <input  type="text" name="telephone" class="dispayed" maxlength="30" size="40">
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              <label for="comments">Comments *</label>
+            </td>
+            <td valign="top">
+              <textarea  name="comments" class="" maxlength="2000" cols="42" rows="6" size="40"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align:center">
+              <input type="submit" value="Submit">   
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+<!-- END CONTACT FORM -->
+        <div class="fap container">
+          <div class="col-md-12 displayed">
+            <hr>
+          </div>
+          <!-- START SOCIAL MEDIA  -->    
+          <div class="row bot">
+
+          <p class="leyenda col-md-12"> (c) 2015 Local 10 - All rights reserved. </p>
+          </div>
+          <div class="row">
+              <div class="smedia">
+                  <li class="icon">
+                      <a href="https://www.facebook.com/localdiez?fref=ts"><img src="images/fbicon.png"></a>
+                  </li>
+                  <li class="icon">
+                      <a href="#pinterest.com"><img src="images/picon.png"></a>
+                  </li>
+                  <li class="icon">
+                      <a href="http://issuu.com/local10-"><img src="images/iicon.png"></a>
+                  </li>
+              </div>
+          </div>
+        </div>
+        
+    <!-- END SOCIAL MEDIA -->
+    </div> <!-- END CONTAINER -->
+
+    
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</body>
+</html>
+  
